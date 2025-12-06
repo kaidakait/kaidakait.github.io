@@ -284,6 +284,26 @@
         text-decoration: none;
         font-weight: 500;
         margin-top: 15px;
+        transition: gap 0.2s ease;
+      }
+
+      .back-to-main:hover {
+        gap: 12px;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--primary-100);
+        text-decoration: none;
+        font-weight: 500;
+        margin-bottom: 30px;
+        transition: gap 0.2s ease;
+      }
+
+      .back-link:hover {
+        gap: 12px;
       }
 
       /* Mobile */
@@ -316,6 +336,14 @@
           <a href="https://kaidit.info/#contact">Contact</a>
         </div>
       </div>
+    </div>
+
+    <!-- Back Link -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 20px 20px 0;">
+      <a href="https://kaidit.info" class="back-link">
+        <span class="material-icons">arrow_back</span>
+        Back to Home
+      </a>
     </div>
 
     <!-- Hero -->
