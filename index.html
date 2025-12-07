@@ -41,7 +41,7 @@
       .navbar-container {
         width: 100%;
         display: flex;
-        z-index: 100;
+        z-index: 1;
         position: fixed;
         top: 0;
         box-shadow: 5px 5px 10px 0px #d4d4d4;
@@ -56,12 +56,24 @@
         display: flex;
         max-width: var(--dl-size-size-maxcontent);
         align-items: center;
-        padding: var(--dl-space-space-tripleunit);
+        padding-top: var(--dl-space-space-tripleunit);
+        padding-left: var(--dl-space-space-tripleunit);
+        padding-right: var(--dl-space-space-tripleunit);
+        padding-bottom: var(--dl-space-space-tripleunit);
         flex-direction: row;
         justify-content: space-between;
       }
 
       .logo { width: 50px; height: auto; }
+
+      .card-heading {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.55;
+        text-transform: none;
+        text-decoration: none;
+      }
 
       .nav-links {
         display: flex;
@@ -289,7 +301,7 @@
     <div class="navbar-container">
       <div class="navbar">
         <a href="https://kaidit.info">
-          <img src="https://kaidit.info/public/playground_assets/Kaidlogo.png" alt="Kaid Logo" class="logo" />
+          <span class="card-heading"><img src="https://kaidit.info/public/playground_assets/Kaidlogo.png" alt="Kaid Logo" class="logo" /></span>
         </a>
         <div class="nav-links">
           <a href="https://kaidit.info/experience.html">Experience</a>
